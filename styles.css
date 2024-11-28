@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1; /* Fondo rosado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+    justify-content: center; /* Centrar el contenido verticalmente */
+    min-height: 100vh;
+}
+
+header {
+    width: 100%; /* Asegura que el header ocupe el ancho completo */
+    max-width: 800px; /* Máximo ancho del header */
+    height: 50px; /* Altura mínima del header */
+}
+
+main {
+    flex: 1;
+    padding: 2em; /* Padding del main */
+    width: 100%; /* Asegura que el main ocupe el ancho completo */
+    max-width: 800px; /* Máximo ancho del main */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Centrar el texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar el contenido verticalmente */
+}
+
+.profile-section {
+    margin-bottom: 2em; /* Espacio entre la sección del perfil y el resto del contenido */
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    border-radius: 50%; /* Hacer la imagen circular */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra para dar efecto */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive; /* Aplicar la fuente cursiva */
+    color: black;
+    margin-top: 1em;
+    text-align: center; /* Centrar el texto */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Aplicar la fuente Montserrat */
+    color: #ff69b4;
+    text-align: center; /* Centrar el texto */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    margin: 1em 0;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 80%; /* Ancho ajustable para todos los botones */
+    max-width: 250px; /* Ancho máximo de los botones */
+    background: #ff69b4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.2em;
+}
+
+.social-btn i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.social-btn:hover {
+    background: #e50072;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    background: #ffe4e1;
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* Tablets */
+    main {
+        padding: 1.5em; /* Ajustar el padding */
+    }
+    h1 {
+        font-size: 1.8em; /* Ajustar el tamaño de la fuente */
+    }
+    h2 {
+        font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+    }
+    .social-btn {
+        width: 90%; /* Ajustar el ancho de los botones */
+    }
+}
+
+@media (max-width: 600px) { /* Celulares y pantallas pequeñas */
+    main {
+        padding: 1em; /* Ajustar el padding en pantallas pequeñas */
+    }
+    .profile-section {
+        margin-bottom: 1em; /* Reducir el margen en pantallas pequeñas */
+    }
+    .image-container {
+        width: 100px; /* Tamaño de la imagen en pantallas pequeñas */
+        height: 100px;
+    }
+    h1 {
+        font-size: 1.5em; /* Ajustar el tamaño de la fuente */
+    }
+    h2 {
+        font-size: 1em; /* Ajustar el tamaño de la fuente */
+    }
+    .social-btn {
+        padding: 0.75em 1.5em; /* Reducir el padding de los botones */
+    }
+}
+
+@media (max-width: 320px) { /* Celulares con pantallas muy pequeñas */
+    main {
+        padding: 0.5em; /* Ajustar el padding en pantallas muy pequeñas */
+    }
+    .profile-section {
+        margin-bottom: 1em; /* Reducir el margen en pantallas muy pequeñas */
+    }
+    .image-container {
+        width: 80px; /* Tamaño de la imagen en pantallas muy pequeñas */
+        height: 80px;
+    }
+    h1 {
+        font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+    }
+    h2 {
+        font-size: 0.8em; /* Ajustar el tamaño de la fuente */
+    }
+    .social-btn {
+        padding: 0.5em 1em; /* Reducir el padding de los botones */
+        width: 100%; /* Hacer los botones responsivos */
+    }
+}
